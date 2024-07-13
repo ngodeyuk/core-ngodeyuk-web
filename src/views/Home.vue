@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import Accordion from '@/components/Accordion.vue';
+import Accordion from '@/components/home/Accordion.vue';
 
 const accordionItems = [
   {
@@ -26,12 +26,11 @@ const accordionItems = [
 </script>
 
 <template>
-  <main class="max-w-3xl mx-auto" id="app">
+  <main class="mt-20 max-w-3xl mx-auto" id="app">
     <h1 class="mt-5 text-5xl text-emerald-500 font-bold">Welcome</h1>
     <div class="mt-5 border border-emerald-500 p-5 rounded-md shadow">
       <h1 class="text-2xl font-semibold text-emerald-500">Frequently Asked Questions</h1>
       <Accordion class="pl-5" :items="accordionItems" />
     </div>
-    <router-view />
   </main>
 </template>

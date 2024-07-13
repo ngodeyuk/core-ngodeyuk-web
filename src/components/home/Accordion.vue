@@ -4,7 +4,7 @@ import {
   AccordionContent,
   AccordionItem,
   AccordionTrigger
-} from '@/components/ui/accordion'
+} from '@/packages/ui/accordion'
 
 import { defineProps } from 'vue'
 
