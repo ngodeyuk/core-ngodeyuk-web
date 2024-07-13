@@ -1,5 +1,6 @@
 <script setup lang="ts">
 import Accordion from '@/components/home/Accordion.vue';
+import HeroSection from '@/components/home/HeroSection.vue';
 
 const accordionItems = [
   {
@@ -26,11 +27,12 @@ const accordionItems = [
 </script>
 
 <template>
-  <main class="mt-20 max-w-3xl mx-auto" id="app">
-    <h1 class="mt-5 text-5xl text-emerald-500 font-bold">Welcome</h1>
-    <div class="mt-5 border border-emerald-500 p-5 rounded-md shadow">
+  <main class="mt-20 mx-auto" id="app">
+    <HeroSection />
+    <!-- <h1 class="mt-5 text-5xl text-emerald-500 font-bold">Welcome</h1>
+    <div class="mt-5 max-w-3xl border border-emerald-500 p-5 rounded-md shadow">
       <h1 class="text-2xl font-semibold text-emerald-500">Frequently Asked Questions</h1>
       <Accordion class="pl-5" :items="accordionItems" />
-    </div>
+    </div> -->
   </main>
 </template>
