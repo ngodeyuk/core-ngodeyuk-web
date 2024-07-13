@@ -6,8 +6,6 @@ import {
   AccordionTrigger
 } from '@/packages/ui/accordion'
 
-import { defineProps } from 'vue'
-
 defineProps<{
   items: Array<{ trigger: string; content: string }>
 }>()
