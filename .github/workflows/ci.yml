@@ -16,5 +16,8 @@ jobs:
             bun-version: latest 
       - run: bun install 
       - run: bun vite build
-      - run: bun preview
+      - run: bun preview &
+      - run: sleep 60
+      - run: curl -sI http://localhost:4173/
+      - run: killall bun
 
