@@ -1,6 +1,6 @@
 <script setup lang="ts">
-import Button from "@/components/Button.vue";
 import Typewriter from 'typewriter-effect/dist/core';
+import { showModal } from '~/store/use-modal.ts'
 
 const rating = ref(5);
 const images = [
@@ -35,7 +35,7 @@ onMounted(() => {
                     pemrograman yang ingin belajar ngoding dengan cara yang menyenangkan dan interaktif? Ngodeyuk adalah
                     aplikasi yang
                     tepat untuk Anda!</p>
-                <Button href="#_" title="Download Now" />
+                <Button @click="showModal" title="Download Now" />
                 <div class="flex flex-col md:flex-row items-center pt-5">
                     <div class="flex item-center">
                         <div class="relative -mr-3" v-for="(image, index) in images" :key="index">

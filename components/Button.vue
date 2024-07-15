@@ -2,7 +2,7 @@
 defineProps({
     href: {
         type: String,
-        required: true
+        required: false
     },
     title: {
         type: String,
@@ -12,7 +12,7 @@ defineProps({
 </script>
 
 <template>
-    <a :href="href" class="relative inline-block px-4 py-2 font-medium group">
+    <a :href="href" class="cursor-pointer relative inline-block px-4 py-2 font-medium group">
         <span
             class="absolute inset-0 w-full h-full transition duration-200 ease-out transform translate-x-1 translate-y-1 rounded-md bg-emerald-800 group-hover:-translate-x-0 group-hover:-translate-y-0"></span>
         <span

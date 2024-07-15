@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { showModal } from '~/store/use-modal.ts'
 const links = [
     { name: 'Benefits', href: '#features' },
     { name: 'Pricing', href: '#pricing' },
@@ -18,7 +19,7 @@ const links = [
                         class="font-medium text-white text-md border-b-2 border-transparent transition-colors hover:scale-110 hover:border-emerald-500">
                         {{ link.name }}
                     </a>
-                    <Button href="#_" title="Download" />
+                    <Button @click="showModal" title="Download" />
                 </nav>
                 <div class="block md:hidden items-center">
                     <Drawer>
@@ -32,7 +33,7 @@ const links = [
                                     class="font-medium text-white text-md border-b-2 border-transparent transition-colors hover:scale-110 hover:border-emerald-500">
                                     {{ link.name }}
                                 </a>
-                                <Button href="#_" title="Download" />
+                                <Button @click="showModal" title="Download" />
                             </DrawerClose>
                         </DrawerContent>
                     </Drawer>

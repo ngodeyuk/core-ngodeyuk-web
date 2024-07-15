@@ -1,4 +1,5 @@
 <script setup lang="ts">
+import { modalState, hideModal } from '~/store/use-modal.ts'
 const title = ref('Ngodeyuk')
 useSeoMeta({
   title: `${title.value} - Belajar Coding Mudah`,
@@ -27,5 +28,6 @@ useSeoMeta({
     <NuxtLayout>
       <NuxtPage />
     </NuxtLayout>
+    <ComingSoon :isVisible="modalState.isModalVisible" @close="hideModal" />
   </main>
 </template>
