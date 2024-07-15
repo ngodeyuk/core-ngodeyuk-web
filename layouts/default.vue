@@ -1,0 +1,4 @@
+<template>
+    <AppNavbar />
+    <slot />
+</template>
