@@ -10,7 +10,7 @@ const links = [
         <div class="container px-4 md:px-6">
             <div class="flex h-14 items-center">
                 <div class="mr-auto flex items-center font-bold">
-                    <img class="w-[100px] h-[100px]" src="/logo.png" alt="logo">
+                    <img class="w-[100px] h-[100px]" src="/logo.png" alt="Ngodeyuk">
                     <h1 class="hidden md:block text-4xl text-emerald-500">Ngode<span class="text-white">yuk</span></h1>
                 </div>
                 <nav class="hidden ml-auto md:flex items-center space-x-4">
@@ -23,7 +23,7 @@ const links = [
                 <div class="block md:hidden items-center">
                     <Drawer>
                         <DrawerTrigger>
-                            <img class="w-[40px]" src="/icons/menu.svg" alt="">
+                            <img class="w-[40px]" src="/icons/menu.svg" alt="menu">
                         </DrawerTrigger>
                         <DrawerContent>
                             <DrawerTitle class="pt-5 text-white text-2xl text-center">Menu</DrawerTitle>

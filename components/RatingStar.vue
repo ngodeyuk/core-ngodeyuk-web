@@ -1,3 +1,12 @@
+<script setup lang="ts">
+const props = defineProps({
+  rating: {
+    type: Number,
+    required: true,
+  },
+});
+</script>
+
 <template>
   <div class="flex items-center">
     <template v-for="star in 5">
@@ -14,14 +23,3 @@
     </template>
   </div>
 </template>
-
-<script setup lang="ts">
-import { defineProps } from 'vue';
-
-const props = defineProps({
-  rating: {
-    type: Number,
-    required: true,
-  },
-});
-</script>
