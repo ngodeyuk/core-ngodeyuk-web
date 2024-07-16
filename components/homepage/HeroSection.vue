@@ -36,7 +36,7 @@ onMounted(() => {
                     aplikasi yang
                     tepat untuk Anda!</p>
                 <Button @click="showModal" title="Download Now" />
-                <div class="flex flex-col md:flex-row items-center pt-5">
+                <div class="flex flex-col md:flex-row items-center md:pt-5 pt-20">
                     <div class="flex item-center">
                         <div class="relative -mr-3" v-for="(image, index) in images" :key="index">
                             <img class="w-[50px] h-[50px] object-cover rounded-full" :src="image" :alt="index">

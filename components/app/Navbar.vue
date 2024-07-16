@@ -1,7 +1,7 @@
 <script setup lang="ts">
 import { showModal } from '~/store/use-modal.ts'
 const links = [
-    { name: 'Benefits', href: '#features' },
+    { name: 'Benefits', href: '#benefits' },
     { name: 'Pricing', href: '#pricing' },
     { name: 'FAQ', href: '#faq' },
 ];
