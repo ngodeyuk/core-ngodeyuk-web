@@ -44,13 +44,13 @@ const features = [
     <main id="benefits" class="lg:h-[600px]">
         <div class="container mx-auto lg:flex justify-between md:py-10 gap-10">
             <div>
-                <h1 class="text-2xl md:text-4xl text-white font-medium">Manfaat yang Anda Dapatkan</h1>
-                <div class="mt-5 border-2 border-emerald-500 shadow shadow-emerald-500 rounded-2xl p-5">
+                <h1 class="text-2xl md:text-4xl  font-medium">Manfaat yang Anda Dapatkan</h1>
+                <div class="mt-5 border-2 border-black shadow shadow-emerald-500 rounded-2xl p-5">
                     <ul v-for="benefit in benefits">
                         <li :key="benefit.id" class="my-5">
                             <div class="flex items-center gap-2">
                                 <img class="bg-emerald-500 rounded-full" src="/icons/check.svg" alt="icon">
-                                <h3 class="text-white text-lg">{{ benefit.title }}</h3>
+                                <h3 class=" text-lg">{{ benefit.title }}</h3>
                             </div>
                             <p class="text-muted-foreground text-md">{{ benefit.desc }}</p>
                         </li>
@@ -58,13 +58,13 @@ const features = [
                 </div>
             </div>
             <div class="mt-10 pb-10 md:pb-0">
-                <h1 class="text-2xl md:text-4xl text-white font-medium">Fitur Unggulan Kami</h1>
-                <div class="mt-5 border-2 border-white shadow shadow-white rounded-2xl p-5">
+                <h1 class="text-2xl md:text-4xl  font-medium">Fitur Unggulan Kami</h1>
+                <div class="mt-5 border-2 border-black shadow shadow-emerald-500 rounded-2xl p-5">
                     <ul v-for="feature in features">
                         <li :key="feature.id" class="my-5">
                             <div class="flex items-center gap-2">
-                                <img src="/icons/check.svg" alt="icon">
-                                <h3 class="text-white text-lg">{{ feature.title }}</h3>
+                                <img class="bg-emerald-500 rounded-full" src="/icons/check.svg" alt="icon">
+                                <h3 class=" text-lg">{{ feature.title }}</h3>
                             </div>
                             <p class="text-muted-foreground text-md">{{ feature.desc }}</p>
                         </li>

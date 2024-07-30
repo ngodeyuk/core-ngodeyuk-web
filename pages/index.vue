@@ -1,6 +1,8 @@
 <template>
-    <main class="mt-20 mx-auto">
+    <main>
         <HomepageHeroSection />
-        <HomepageBenefits />
+        <HomepageGetStarted />
+        <HomepageFeatures />
+        <HomepageContributor />
     </main>
 </template>
